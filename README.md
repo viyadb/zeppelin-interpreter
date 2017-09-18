@@ -1,19 +1,17 @@
 zeppelin-viyadb
 ================
 
-This project contains Zeppelin interpreter for querying ViyaDB instance.
+Zeppelin interpreter for querying ViyaDB instance.
+
+[![Build Status](https://travis-ci.org/viyadb/zeppelin-interpreter.png)](https://travis-ci.org/viyadb/zeppelin-interpreter)
 
 ### Installation
 
-First, compile the project, and install it to your local Maven repository:
-
-```bash
-mvn clean install
-```
-
-Then, go to your Zeppelin package directory, and run:
+Go to your Zeppelin package directory, and run:
 
 ```bash
 ./bin/install-interpreter.sh --name viyadb --artifact com.github.viyadb:zeppelin-viyadb:0.7.2
 ```
+
+Follow the instructions contained in the output from the installation command.
 

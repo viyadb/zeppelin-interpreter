@@ -18,6 +18,12 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git://github.com/viyadb/zeppelin-interpreter.git</connection>
+        <developerConnection>scm:git:ssh://github.com:viyadb/zeppelin-interpreter.git</developerConnection>
+        <url>http://github.com/viyadb/zeppelin-interpreter/tree/master</url>
+    </scm>
+
     <developers>
         <developer>
             <name>Michael Spector</name>
@@ -26,17 +32,18 @@
         </developer>
     </developers>
 
-    <scm>
-        <connection>scm:git:git://github.com/viyadb/zeppelin-interpreter.git</connection>
-        <developerConnection>scm:git:ssh://github.com:viyadb/zeppelin-interpreter.git</developerConnection>
-        <url>http://github.com/viyadb/zeppelin-interpreter/tree/master</url>
-    </scm>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -101,6 +108,17 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
             </plugin>
         </plugins>
     </build>
