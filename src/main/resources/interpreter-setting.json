@@ -1,0 +1,24 @@
+[
+  {
+    "group": "viyadb",
+    "name": "viyadb",
+    "className": "com.github.viyadb.zeppelin.ViyaDBInterpreter",
+    "properties": {
+      "viyadb.host": {
+        "envName": null,
+        "propertyName": "viyadb.host",
+        "defaultValue": "localhost",
+        "description": "ViyaDB instance host to connect to"
+      },
+      "viyadb.port": {
+        "envName": null,
+        "propertyName": "viyadb.port",
+        "defaultValue": "5000",
+        "description": "ViyaDB instance port to connect to"
+      }
+    },
+    "editor": {
+      "language": "json"
+    }
+  }
+]
