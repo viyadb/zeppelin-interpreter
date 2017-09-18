@@ -13,5 +13,5 @@ Go to your Zeppelin package directory, and run:
 ./bin/install-interpreter.sh --name viyadb --artifact com.github.viyadb:zeppelin-viyadb:0.7.2
 ```
 
-Follow the instructions contained in the output from the installation command.
+Then, follow the instructions contained in the output from the installation command.
 
