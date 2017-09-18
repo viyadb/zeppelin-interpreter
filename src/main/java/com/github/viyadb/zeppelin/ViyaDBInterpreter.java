@@ -47,6 +47,7 @@ public class ViyaDBInterpreter extends Interpreter {
             try {
                 Future<HttpResponse<String>> future = Unirest.post(queryUrl)
                         .header("Content-Type", "application/json")
+                        .queryString("header", "1")
                         .body(script)
                         .asStringAsync();
                 runningQueries.put(context.getParagraphId(), future);
