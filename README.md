@@ -21,3 +21,6 @@ Go to your Zeppelin package directory, and run:
 
 Then, follow the instructions contained in the output from the installation command.
 
+## Usage
+
+For query syntax please refer to the ViyaDB Website: http://viyadb.com
