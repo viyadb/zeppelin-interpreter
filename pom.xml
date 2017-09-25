@@ -4,7 +4,7 @@
 
     <groupId>com.github.viyadb</groupId>
     <artifactId>zeppelin-viyadb</artifactId>
-    <version>0.7.2</version>
+    <version>0.7.3</version>
     <packaging>jar</packaging>
 
     <name>Zeppelin ViyaDB Interpreter</name>
@@ -49,7 +49,7 @@
         <dependency>
             <groupId>org.apache.zeppelin</groupId>
             <artifactId>zeppelin-interpreter</artifactId>
-            <version>0.7.2</version>
+            <version>0.7.3</version>
             <scope>provided</scope>
         </dependency>
 

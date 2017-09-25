@@ -16,7 +16,7 @@ Zeppelin interpreter for querying ViyaDB instance.
 Go to your Zeppelin package directory, and run:
 
 ```bash
-./bin/install-interpreter.sh --name viyadb --artifact com.github.viyadb:zeppelin-viyadb:0.7.2
+./bin/install-interpreter.sh --name viyadb --artifact com.github.viyadb:zeppelin-viyadb:0.7.3
 ```
 
 Then, follow the instructions contained in the output from the installation command.
