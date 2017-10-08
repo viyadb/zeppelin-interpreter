@@ -15,6 +15,12 @@
         "propertyName": "viyadb.port",
         "defaultValue": "5000",
         "description": "ViyaDB instance port to connect to"
+      },
+      "viyadb.query.timeout": {
+        "envName": null,
+        "propertyName": "viyadb.query.timeout",
+        "defaultValue": "120000",
+        "description": "Timeout while querying ViyaDB instance"
       }
     },
     "editor": {

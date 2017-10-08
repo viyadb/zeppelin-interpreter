@@ -32,6 +32,9 @@ public class ViyaDBInterpreter extends Interpreter {
     public void open() {
         queryUrl = "http://" + getProperty("viyadb.host") + ":"
                 + getProperty("viyadb.port") + "/query";
+
+        Unirest.setTimeouts(10000,
+                Long.valueOf(getProperty().getProperty("viyadb.query.timeout", "120000")));
     }
 
     @Override
