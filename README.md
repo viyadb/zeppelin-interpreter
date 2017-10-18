@@ -13,6 +13,8 @@ Zeppelin interpreter for querying ViyaDB instance.
 
 ## Installation
 
+First, [download](http://zeppelin.apache.org/download.html) and unzip Zeppelin distribution (you can use netinst package for saving your Internet bandwidth).
+
 Go to your Zeppelin package directory, and run:
 
 ```bash
